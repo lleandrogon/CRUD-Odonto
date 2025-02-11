@@ -1,8 +1,10 @@
 :root {
     --azul: #0095EB;
+    --azul-escuro: #008cdd;
     --verde: #00d900;
     --verde-escuro: #009000;
     --vermelho: #ff0000;
+    --vermelho-escuro: #c70000;
     --fundo: #ffffff;
     --texto: #000000;
 }
@@ -158,12 +160,84 @@
 
 /* inserir_paciente.php */
 
+.titulo-2 {
+    color: var(--texto);
+    font-size: 2.5em;
+    text-transform: uppercase;
+}
+
+.titulo-2::after {
+    content: "";
+    display: block;
+    margin: 10px;
+    width: 120px;
+    height: 3px;
+    background-color: var(--azul);
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .form-inserir-container {
-    padding: 0 200px;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 .form-inserir {
-    padding: 40px;
-    border: 3px solid var(--azul);
-    border-radius: 30px;
+    padding: 30px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px var(--sombra);
+    background-color: var(--fundo);
+}
+
+.form-label {
+    font-weight: bold;
+    color: var(--azul);
+}
+
+.form-control {
+    border: none;
+    border-bottom: 2px solid var(--azul);
+    background-color: var(--fundo);
+    color: var(--texto);
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.form-control:focus {
+    background-color: var(--fundo);
+    color: var(--texto);
+}
+
+.botao-sucesso, .botao-cancelar {
+    color: white;
+    padding: 7px 10px;
+    border: none;
+    border-radius: 15px;
+    font-size: 1.2em;
+    font-weight: 600;
+    transition: transform 0.2s, background-color 0.3s ease;
+}
+
+.botao-sucesso {
+    background-color: var(--verde);
+}
+
+.botao-sucesso:hover {
+    background-color: var(--verde-escuro);
+    transform: translateY(-3px);
+}
+
+.botao-cancelar {
+    background-color: var(--vermelho);
+}
+
+.botao-cancelar:hover {
+    background-color: var(--vermelho-escuro);
+    transform: translateY(-3px);
 }
