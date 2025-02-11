@@ -40,10 +40,6 @@
     height: 500px;
 }
 
-.tabela-container {
-   width: 450px;
-}
-
 .titulo-container {
     background-color: var(--azul);
 }
@@ -83,6 +79,9 @@
     width: 100%;
     table-layout: auto;
     font-size: 0.9em;
+    width: 100%;
+    table-layout: fixed;
+    word-wrap: break-word;
 }
 
 .tabela th, .tabela td {

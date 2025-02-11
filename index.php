@@ -9,6 +9,8 @@ if (isset($_GET["pagina"])) {
 
     if ($pagina == "inserir_paciente") {
         include "views/inserir_paciente.php";
+    } else if ($pagina == "editar_paciente") {
+        include "views/editar_paciente.php";
     } else {
         include "views/pacientes.php";
     }
