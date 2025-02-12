@@ -11,6 +11,8 @@ if (isset($_GET["pagina"])) {
         include "views/inserir_paciente.php";
     } else if ($pagina == "editar_paciente") {
         include "views/editar_paciente.php";
+    } else if ($pagina == "linha_do_tempo") {
+        include "views/linha_do_tempo.php";
     } else {
         include "views/pacientes.php";
     }

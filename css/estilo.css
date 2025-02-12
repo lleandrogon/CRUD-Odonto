@@ -16,6 +16,7 @@
 
 .cabecalho {
     padding: 20px 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
 }
 
 .logo-cabecalho {
@@ -37,7 +38,7 @@
 }
 
 .pacientes {
-    height: 500px;
+    margin-top: 25px;
 }
 
 .titulo-container {
@@ -56,6 +57,14 @@
 
 .sem-sublinhado {
     text-decoration: none;
+}
+
+.link {
+    color: var(--texto);
+}
+
+.link:hover {
+    color: var(--azul);
 }
 
 .botao {
@@ -239,4 +248,17 @@
 .botao-cancelar:hover {
     background-color: var(--vermelho-escuro);
     transform: translateY(-3px);
+}
+
+/* linha_do_tempo.php */
+
+.linha-do-tempo {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+canvas {
+    border: 1px solid #ddd;
+    text-align: center;
 }

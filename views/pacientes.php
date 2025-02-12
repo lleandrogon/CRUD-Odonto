@@ -28,7 +28,7 @@
                         <?php
                             while ($linha = mysqli_fetch_array($consulta_pacientes)) {
                                 echo "<tr>
-                                        <td> " . $linha['nome'] . " </td>  
+                                        <td><a href='?pagina=linha_do_tempo&id=" . $linha['id'] . "' class='sem-sublinhado link'>" . $linha['nome'] . "</a></td>   
                                         <td> " . $linha['cpf'] . " </td>  
                                         <td> " . $linha['telefone'] . " </td>";
                                         
