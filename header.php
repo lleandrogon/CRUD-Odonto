@@ -13,7 +13,7 @@
     <header class="cabecalho container-fluid">
         <div class="row">
             <div class="col-6">
-                <img src="https://www.clinicatogniodontologia.com/wp-content/uploads/2023/11/cropped-logotipo.png" alt="Logo" class="logo-cabecalho img-fluid">
+                <img src="assets/logo.png" alt="Logo" class="logo-cabecalho img-fluid">
             </div>
             <div class="col-6 d-flex justify-content-end align-items-center">
                 <button onclick="alternarTema()" id="alternar-tema" class="tema d-flex align-items-center"><i class="fa-solid fa-moon me-2"></i>Modo Escuro</button>

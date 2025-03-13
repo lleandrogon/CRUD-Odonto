@@ -1,10 +1,12 @@
 <?php 
 
-$servidor = "localhost";
-$usuario = "root";
-$senha = "";
-$db = "clinica_db";
-$porta = 3307;
+$config = include 'config.php';
+
+$servidor = $config['servidor'];
+$usuario = $config['usuario'];
+$senha = $config['senha'];
+$db = $config['db'];
+$porta = $config['porta'];
 
 $conexao = mysqli_connect($servidor, $usuario, $senha, $db, $porta);
 
